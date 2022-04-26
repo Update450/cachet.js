@@ -5,6 +5,13 @@
   "main": "dist/cachet.js.js",
   "module": "dist/cachet.js.esm.mjs",
   "types": "dist/index.d.ts",
+  "files": [
+		"dist/*"
+	],
+	"exports": {
+		"require": "./dist/cachet.js.js",
+		"import": "./dist/cachet.js.esm.mjs"
+	},
   "scripts": {
     "build": "rollup -c ./scripts/rollup.config.js",
     "watch": "rollup -w -c ./scripts/rollup.config.js --configProduction"
